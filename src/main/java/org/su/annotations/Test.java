@@ -8,5 +8,7 @@ import java.lang.annotation.Target;
 @Target(value = ElementType.METHOD)
 @Retention(value = RetentionPolicy.RUNTIME)
 public @interface Test {
-
+    public String name();
+    public String description();
 }
+ 
